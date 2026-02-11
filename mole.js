@@ -54,7 +54,8 @@ window.addEventListener('DOMContentLoaded', () => {
       // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
       // event.target.classList.add('wgs__mole-head--hidden');
 
-      // Reset mole immediately (no image swap)
+      // Swap to The Rock image when whacked!
+      event.target.classList.add('wgs__mole-head--whacked');
     });
   }
 });
