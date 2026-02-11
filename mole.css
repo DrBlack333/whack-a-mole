@@ -1,9 +1,59 @@
-/* Your code here */
+/* Mole game container */
+.wgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Whackable game space */
+.wgs {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* Mole head */
+.wgs__mole-head {
+  position: absolute;
+  width: 150px;
+  height: 142px;
+  left: 25px;
+  top: 40px;
+  z-index: 1;
+  cursor: pointer;
+  transition: margin-top 0.25s ease-out;
+}
+
+/* Hidden state - mole is underground */
+.wgs__mole-head--hidden {
+  margin-top: 100px;
+}
+
+/* Whacked state - swap to The Rock! */
+.wgs__mole-head--whacked {
+  content: url('rock-whacked.png');
+  width: 150px;
+  height: 188px;
+  top: -10px;
+}
+
+/* Dirt pile on top */
+.wgs__dirt-pile {
+  position: absolute;
+  width: 200px;
+  height: 69px;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
 
 
 
-/* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
-/* .sb {
+/* Scoreboard styles */
+.sb {
   background-color: cornflowerblue;
   border-bottom: 1px solid #645DED;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -12,17 +62,17 @@
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
-} */
+}
 
-/* .sb__mole-counter {
+.sb__mole-counter {
   flex: 1 0 0;
   text-align: right;
-} */
+}
 
-/* .sb__score-holder {
+.sb__score-holder {
   flex: 1 0 0;
-} */
+}
 
-/* .sb__game-over--hidden {
+.sb__game-over--hidden {
   display: none;
-} */
+}

@@ -20,8 +20,8 @@ function popUpRandomMole() {
 
   clickable = true;
 
-  // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
-  // moleHead.classList.remove('wgs__mole-head--hidden', 'wgs__mole-head--whacked');
+  // Remove hidden and whacked states to show the mole
+  moleHead.classList.remove('wgs__mole-head--hidden', 'wgs__mole-head--whacked');
 
   molesLeft -= 1;
   document.querySelector('.sb__moles').innerHTML = molesLeft;
@@ -54,8 +54,8 @@ window.addEventListener('DOMContentLoaded', () => {
       // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
       // event.target.classList.add('wgs__mole-head--hidden');
 
-      // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED FOR THE BONUS
-      // event.target.classList.add('wgs__mole-head--whacked');
+      // Swap to The Rock image when whacked!
+      event.target.classList.add('wgs__mole-head--whacked');
     });
   }
 });
